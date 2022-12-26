@@ -12,6 +12,6 @@ _start: 		# Label
 	li x7, 4	# pseudo-instruction
 	add x5, x6, x7	# instruction
 	do_nothing	# Calling macro
-stop:	j stop		# statement in one line
-
+stop:	
+	j stop		# statement in one line
 	.end		# End of file
