@@ -13,7 +13,7 @@ run: all
 	@${QEMU} ${QFLAGS} -kernel ./${EXEC}.elf
 
 .PHONY : debug
-debug: all
+debug: clean all
 	@echo "Press Ctrl-C and then input 'quit' to exit GDB and QEMU"
 	@echo "-------------------------------------------------------"
 	@${QEMU} ${QFLAGS} -kernel ${EXEC}.elf -s -S &
