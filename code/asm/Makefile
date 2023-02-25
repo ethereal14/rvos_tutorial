@@ -8,7 +8,8 @@ SECTIONS_Arithmetic = \
 	nop \
 	mv \
 	lui \
-	li
+	li \
+
 
 SECTIONS_Logical = \
 	and \
